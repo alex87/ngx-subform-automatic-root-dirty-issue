@@ -1,0 +1,28 @@
+<div class="form-container">
+
+    <p>NgxRootForm:</p>
+    <app-root-form [viewmodel]="rootFormModel"
+                   (viewmodelUpdated)="rootFormChanged($event)"></app-root-form>
+    <input type="button"
+           (click)="setRootFormValues()"
+           value="Reset">
+    <input type="button"
+           (click)="logRootFormValues()"
+           value="Current Form Value">
+</div>
+
+
+<div class="form-container">
+
+    <p>NgxAutomaticRootForm:</p>
+    <app-automatic-root-form [viewmodel]="autoFormModel"
+                             (viewmodelUpdated)="autoFormChanged($event)">
+    </app-automatic-root-form>
+    <input type="button"
+           (click)="setAutoFormValues()"
+           value="Reset">
+    <input type="button"
+           (click)="logAutoFormValues()"
+           value="Current Form Value">
+
+</div>

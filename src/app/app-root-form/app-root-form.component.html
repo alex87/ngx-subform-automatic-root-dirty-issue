@@ -1,0 +1,14 @@
+<form [formGroup]="formGroup">
+    <label>Title:</label>
+    <input type="text"
+           [formControlName]="formControlNames.title"/>
+    <p>SubForm:</p>
+
+    <app-sub-form [formControlName]="formControlNames.something"></app-sub-form>
+
+    <p>
+        formDirty: {{formGroup.dirty}}
+    </p>
+
+
+</form>
