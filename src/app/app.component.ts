@@ -34,9 +34,9 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.rootFormRef.dataOutput.subscribe(value => {
       console.log("rootFormValue", value);
     });
-    this.autoFormRef.dataOutput.subscribe(value => {
+   /* this.autoFormRef.dataOutput.subscribe(value => {
       console.log("autoFormRefVAlue", value);
-    });
+    });*/
   }
 
   setRootFormValues() {
