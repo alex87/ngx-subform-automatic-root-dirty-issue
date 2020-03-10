@@ -1,6 +1,6 @@
 <div class="form-container">
 
-    <p>NgxRootForm:</p>
+    <p>NgxRootForm (becomes dirty):</p>
     <app-root-form [viewmodel]="rootFormModel"
                    (viewmodelUpdated)="rootFormChanged($event)"></app-root-form>
     <input type="button"
@@ -14,7 +14,7 @@
 
 <div class="form-container">
 
-    <p>NgxAutomaticRootForm:</p>
+    <p>NgxAutomaticRootForm (never stays dirty):</p>
     <app-automatic-root-form [viewmodel]="autoFormModel"
                              (viewmodelUpdated)="autoFormChanged($event)">
     </app-automatic-root-form>
